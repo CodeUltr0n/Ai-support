@@ -9,9 +9,9 @@ const app = new Hono();
 
 const limiter = rateLimiter({
   windowMs: 15 * 60 * 1000, // 15 minutes
-  limit: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes).
-  standardHeaders: "draft-6", // draft-6: `RateLimit-*` headers; draft-7: combined `RateLimit` header
-  keyGenerator: (c: Context) => c.req.header("cf-connecting-ip") || "", // Method to generate custom identifiers for clients.
+  limit: 100, // Limit each IP to 100 requests 
+  standardHeaders: "draft-6", // draft-6: `RateLimit-*` headers;
+  keyGenerator: (c: Context) => c.req.header("cf-connecting-ip") || "", //custom identifiers for clients.
 });
 app.use('*',cors({origin:'*'}));
 app.use(limiter);
