@@ -1,0 +1,45 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "prisma:seed": "prisma db seed"
+  },
+  "keywords": [
+    "ai",
+    "support-agent",
+    "prisma",
+    "postgresql",
+    "hono",
+    "backend"
+  ],
+  "author": "Ketan Chokkara",
+  "license": "ISC",
+  "description": "Backend for AI support agent using Hono, Prisma, and PostgreSQL",
+  "dependencies": {
+    "@ai-sdk/openai": "^3.0.26",
+    "@hono/node-server": "^1.19.9",
+    "@prisma/client": "^6.19.2",
+    "ai": "^6.0.78",
+    "dotenv": "^17.2.4",
+    "hono": "^4.11.9"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "nodemon": "^3.1.11",
+    "prisma": "^6.19.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  },
+  "prisma": {
+    "seed": "ts-node src/db/seed.ts"
+  }
+}
