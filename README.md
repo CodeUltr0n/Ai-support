@@ -1,6 +1,6 @@
-# Swadesh1 - AI Support Agent System
+# AI Support Agent System
 
-Swadesh1 is an AI-powered customer support system designed to handle e-commerce queries. It features a React-based frontend and a robust backend built with Hono, Node.js, and PostgreSQL. The system utilizes specialized AI agents to route and resolve user inquiries regarding orders, billing, and general support.
+AI-powered customer support system designed to handle e-commerce queries. It features a React-based frontend and a robust backend built with Hono, Node.js, and PostgreSQL. The system utilizes specialized AI agents to route and resolve user inquiries regarding orders, billing, and general support.
 
 ## 🚀 Tech Stack
 
@@ -29,7 +29,7 @@ Ensure you have the following installed:
 ### 1. Clone the Repository
 ```bash
 git clone <repository-url>
-cd Swadesh1
+cd Ai-support
 ```
 
 ### 2. Backend Setup
